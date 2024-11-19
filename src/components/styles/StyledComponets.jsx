@@ -21,3 +21,14 @@ export const Link = styled(LinkComponent)`
     text-decoration: none;
   }
 `;
+export const InputBox = styled("input")`
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+  &:focus {
+    outline: none;
+  }
+`;

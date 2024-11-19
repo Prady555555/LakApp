@@ -4,8 +4,9 @@ import Title from "../shared/Title";
 import Header from "./Header";
 
 import ChatList from "../specific/ChatList";
-import sampleChats from "../../containts/sampleData";
+import { sampleChats } from "../../containts/sampleData";
 import { useParams } from "react-router-dom";
+import Profile from "../specific/Profile";
 
 const AppLayouts = () => (WrappedComponent) => {
   // eslint-disable-next-line react/display-name
@@ -60,11 +61,10 @@ const AppLayouts = () => (WrappedComponent) => {
             sx={{
               display: { xs: "none", md: "block" },
               padding: "2rem",
-              bgcolor: "blue",
+              backgroundColor: "gray",
             }}
-            bgcolor="primary.main"
           >
-            first
+            <Profile />
           </Grid>
         </Grid>
         Footer

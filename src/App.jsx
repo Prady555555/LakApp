@@ -18,7 +18,7 @@ const App = () => {
           <Route element={<ProutedRoute user={user} />}>
             <Route path="/" element={<Home />} />
             <Route path="/chat/:chatId" element={<Chat />} />
-            <Route path="/Groups" element={<Group />} />
+            <Route path="/groups" element={<Group />} />
             <Route path="*" element={<Home />} />
           </Route>
 

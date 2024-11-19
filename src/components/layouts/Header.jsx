@@ -20,7 +20,7 @@ import { lazy, Suspense, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const SearchDialog = lazy(() => import("../specific/Search"));
-const NotificationDialog = lazy(() => import("../specific/Notifications"));
+const NotificationDialog = lazy(() => import("../specific/Notfication"));
 const NewGroupDialog = lazy(() => import("../specific/NewGroup"));
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);

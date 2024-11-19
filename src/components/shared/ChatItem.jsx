@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { Link } from "../styles/StyledComponets";
 import { memo } from "react";
+import AvatorCard from "./AvatorCard";
 
 const ChatItem = ({
   groupChat = false,
@@ -24,8 +25,13 @@ const ChatItem = ({
         style={{
           backgroundColor: sameSender ? "black" : "unset",
           color: sameSender ? "white" : "unset",
+          transform: sameSender ? "translateY(-5px)" : "translateY(0)",
+          opacity: sameSender ? 1 : 0.8,
+          transition:
+            "background-color 0.3s ease, color 0.3s ease, transform 0.4s ease-out, opacity 0.4s ease-out",
         }}
       >
+        <AvatorCard avator={avatar} />
         <Stack>
           <Typography>{name}</Typography>
           {newMessageAlert && (
